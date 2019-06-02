@@ -16,7 +16,7 @@ sound = minim.loadSample("pong.wav", 128);
 }
 
 void draw(){
-  
+  float r= random(0,20);
       background(188,143,143);
       fill(0,0,0);
       text("score is " + score, 450, 50);
@@ -39,7 +39,7 @@ ellipse(X, Y, 15, 15);
     sound.trigger();
     Yspeed=-Yspeed;}
 rect(mouseX, 590, 50, 10);
-rect(Z, 0, 50, 10);
+rect(X, 0, 50, 10);
 if(r==10){
   Z=Z+51;}
 if(r==11){

@@ -8,5 +8,7 @@ package body_part_quiz;
 public class BodyPartQuizRunner {
 	public static void main(String[] args) {
 		new BodyPartQuiz().run();
+
+	
 	}
 }
