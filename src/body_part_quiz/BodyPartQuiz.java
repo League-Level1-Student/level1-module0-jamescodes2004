@@ -42,7 +42,7 @@ public class BodyPartQuiz {
 
 		// 3. Change the size of the window so that you can only see part of the
 		// image.
-		window.setSize(500, 500);
+		window.setSize(100, 125);
 
 		showNextImage();
 
@@ -64,13 +64,49 @@ if (guess.equals("Arnold Schwarzenegger"))
 		// 6. Otherwise:
 		// -- Tell them they are wrong and who the person is
 else{
-	JOptionPane.showMessageDialog(null, "Nah foo, dis is Arnold Schwarzenegger");
+	JOptionPane.showMessageDialog(null, "Nah foo, dis is Arnold Schwarzenegger.");
 }
 		// 7. Use the showNextImage() method below to get the next image
 		showNextImage();
 
 		// 8. .... repeat 4-7 for all your images.....
-		String guess = JOptionPane.showInputDialog("who is this?");
+		String guess1 = JOptionPane.showInputDialog("who is this?");
+		if (guess1.equals("Leonardo DiCaprio"))
+			score=score+1;
+		else{
+			JOptionPane.showMessageDialog(null, "You trippin cuz, dis Leonardo DiCaprio.");
+		}
+		showNextImage();
+		
+		String guess2 = JOptionPane.showInputDialog("who is this?");
+		if (guess2.equals("Morgan Freeman"))
+			score=score+1;
+		else{
+			JOptionPane.showMessageDialog(null, "Damn boi get yo stuff together, that's Morgan Freeman!");
+		}
+		showNextImage();
+		
+		String guess3 = JOptionPane.showInputDialog("who is this?");
+		if (guess3.equals("Jack Black"))
+			score=score+1;
+		else{
+			JOptionPane.showMessageDialog(null, "Dawg that kids name is Jack Black!");
+		}
+if (score==3) {
+	JOptionPane.showMessageDialog(null, "Good job, you somehow knew almost everyone (3/4).");
+}
+if (score==4) {
+	JOptionPane.showMessageDialog(null, "You might just be a genius, cause you got 4/4!");
+}
+if (score==1) {
+	JOptionPane.showMessageDialog(null, "Get woke, you only got 1/4!");
+}
+if (score==2) {
+	JOptionPane.showMessageDialog(null, "You did alright...:(");
+}
+if (score==0) {
+	JOptionPane.showMessageDialog(null, "Get out from under that rock your under, you got none of em.");
+}
 		// 9. Show them their current score
 
 	}
