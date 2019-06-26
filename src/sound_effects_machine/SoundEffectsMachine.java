@@ -53,31 +53,31 @@ JPanel panel = new JPanel();
 		button1.add(label1);
 		JLabel label2 = new JLabel();
 		label2.setText("Service Bell");
-		button1.add(label2);
+		button2.add(label2);
 		JLabel label3 = new JLabel();
 		label3.setText("Heavy Rain");
-		button1.add(label3);
+		button3.add(label3);
 		JLabel label4 = new JLabel();
 		label4.setText("Labrador Barking");
-		button1.add(label4);
+		button4.add(label4);
 		JLabel label5 = new JLabel();
 		label5.setText("Old Car Starting");
-		button1.add(label5);
+		button5.add(label5);
 		JLabel label6 = new JLabel();
 		label6.setText("UFO");
-		button1.add(label6);
+		button6.add(label6);
 		JLabel label7 = new JLabel();
 		label7.setText("Van Sliding Door");
-		button1.add(label7);
+		button7.add(label7);
 		JLabel label8 = new JLabel();
 		label8.setText("Harley Davidson");
-		button1.add(label8);
+		button8.add(label8);
 		JLabel label9 = new JLabel();
 		label9.setText("SOS Morse Code");
-		button1.add(label9);
+		button9.add(label9);
 		JLabel label10 = new JLabel();
 		label10.setText("Muscle Car");
-		button1.add(label10);
+		button10.add(label10);
 	frame.pack();
 	button1.addActionListener(this);
 	button2.addActionListener(this);
@@ -100,21 +100,22 @@ JPanel panel = new JPanel();
 		if (e.getSource().equals(button2)) {
 			playSound("service-bell_daniel_simion.wav");}
 		if (e.getSource().equals(button3)) {
-			playSound("heavy-rain-daniel_simion.wav");}
+			playSound("heavy-rain-daniel_simon.wav");}
 		if (e.getSource().equals(button4)) {
-			playSound("labrador-barking-daniel_simion.wav");}
+			playSound("labrador-barking-daniel_simon.wav");}
 		if (e.getSource().equals(button5)) {
-			playSound("heavy-rain_daniel_simion.wav");}
+			playSound("old-car-engine_daniel_simion.wav");}
 		if (e.getSource().equals(button6)) {
-			playSound("heavy-rain_daniel_simion.wav");}
+			playSound("alien-spaceship_daniel_simion.wav");}
 		if (e.getSource().equals(button7)) {
-			playSound("heavy-rain_daniel_simion.wav");}
+			playSound("van-sliding-door-daniel_simon.wav");}
 		if (e.getSource().equals(button8)) {
-			playSound("heavy-rain_daniel_simion.wav");}
+			playSound("harley-davidson-daniel_simon.wav");}
 		if (e.getSource().equals(button9)) {
-			playSound("heavy-rain_daniel_simion.wav");}
+			playSound("sos-morse-code_daniel-simion.wav");}
 		if (e.getSource().equals(button10)) {
-			playSound("heavy-rain_daniel_simion.wav");}
+			playSound("muscle-car-daniel_simon.wav");}
+
 	}
 
 
